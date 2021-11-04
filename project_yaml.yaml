@@ -1,0 +1,25 @@
+raw_data: 'embed_data.p'
+tensors_folder: '/iris_tensor/'
+embed_val : 0
+target_val: 2
+labales_file: '/iiris_huggings/code_pickle/data_labels.p'
+models_folder: '/iris_models/'
+bert_tokenizer_name: 'bert-base-multilingual-cased'
+batch_size: 8
+tokenizer_dic: {
+        'params': {
+            'add_special_tokens': True,
+            'max_length': 512,
+            'pad_to_max_length': True,
+            'return_token_type_ids': False,
+            'truncation': True,
+        }}
+
+#for pre-trained cases
+improv_model: False
+pre_trained_folder: "hh"
+n_epochs: 5
+reg_term: 1
+tab_dim: 54
+tab_format:
+use_ode: False
